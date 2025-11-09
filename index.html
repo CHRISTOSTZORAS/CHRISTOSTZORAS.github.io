@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christos Tzoras | Data Scientist</title>
+  <meta name="description" content="Portfolio of Christos Tzoras — Data Scientist based in Athens, Greece." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Sticky Navigation ===== -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#top">CT</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">
+        ☰
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Professional Experience</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-media">
+        <!-- Replace the src with your real photo filename (in the same folder or /assets) -->
+        <img src="assets/christos.jpg" alt="Photo of Christos Tzoras" class="avatar">
+      </div>
+      <div class="hero-copy">
+        <h1>Christos Tzoras</h1>
+        <p class="subtitle">Data Scientist • Athens, Greece</p>
+        <p class="lead">
+          Passionate about machine learning, statistical analysis, and turning raw data into clear, actionable insights.
+          I love building intelligent, explainable models that support real-world decision-making.
+        </p>
+        <div class="hero-actions">
+          <!-- Put your actual PDF filename here (same folder): e.g., christos-tzoras-cv.pdf -->
+          <a class="btn primary" href="christos-tzoras-cv.pdf" download>Download Résumé</a>
+          <a class="btn" href="https://github.com/CHRISTOSTZORAS" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/christos-tzoras" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        I’m a data scientist with a strong background in machine learning, statistical modeling, and data visualization.
+        My interests include NLP for misinformation detection, model fairness & transparency, and end-to-end ML pipelines—from
+        data wrangling to production-ready evaluation.
+      </p>
+      <ul class="meta">
+        <li><strong>Location:</strong> Athens, Greece</li>
+        <li><strong>Email:</strong> <a href="mailto:xtzoras@gmail.com">xtzoras@gmail.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Professional Experience ===== -->
+  <section id="experience" class="section alt">
+    <div class="container">
+      <h2>Professional Experience</h2>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Associate Data Scientist — Analytics & AI Hub</h3>
+          <span class="place">PwC, Athens</span>
+          <span class="date">Apr 2024 – Present</span>
+        </header>
+        <ul class="card-list">
+          <li>Applied ML/statistical methods to solve business problems; collaborated across teams to deliver data products.</li>
+          <li>Built/maintained analytics pipelines and dashboards to drive decision-making.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Military Service — Military Police</h3>
+          <span class="place">Athens</span>
+          <span class="date">Nov 2022 – Nov 2023</span>
+        </header>
+        <p class="card-note">Fulfilled national service obligations; developed discipline, teamwork, and resilience.</p>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Internet Services</h3>
+          <span class="place">Battlenet Internet Café, Kallithea</span>
+          <span class="date">Aug 2019 – Jun 2021</span>
+        </header>
+        <p class="card-note">Customer support and systems assistance in a fast-paced environment.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Internships ===== -->
+  <section id="internships" class="section">
+    <div class="container">
+      <h2>Internships</h2>
+      <p>Open to impactful internships in data science / ML engineering — focusing on NLP, trustworthy AI, and analytics platforms.</p>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid-2">
+        <article class="card">
+          <header class="card-head">
+            <h3>Multi-Agent Fake News Detection (Thesis)</h3>
+            <span class="date">Sep 2025</span>
+          </header>
+          <p>
+            Built a multi-agent system in Flowise orchestrating GPT-4o-mini with external web search (Google/Serper).
+            Agents performed classification, bias/emotion/credibility scoring, and source quality checks to produce
+            structured, explainable outputs.
+          </p>
+          <div class="tags">
+            <span class="tag">NLP</span><span class="tag">Agents</span><span class="tag">Explainability</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <h3>Fake News Detection using ML</h3>
+            <span class="date">Mar 2025</span>
+          </header>
+          <p>
+            End-to-end pipeline combining keyword, sentiment, and sensationalism features with classifiers
+            (LogReg, Random Forest). Included fairness auditing (Fairlearn) and confusion-matrix evaluation for
+            transparent, equitable performance.
+          </p>
+          <div class="tags">
+            <span class="tag">scikit-learn</span><span class="tag">Fairness</span><span class="tag">NLP</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <h3>Statistical Tools in Data Mining</h3>
+            <span class="date">Feb 2025</span>
+          </header>
+          <p>
+            Used the UCI Adult Income dataset to classify income &gt; $50K/yr. Methods included K-Means, Agglomerative
+            clustering; Logistic Regression, Random Forest, SVM, Gradient Boosting, and MLP.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">SVM</span><span class="tag">Gradient Boosting</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="more">
+        More projects on <a href="https://github.com/CHRISTOSTZORAS" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>MSc, Applied Statistics (Data Analysis & Biostatistics)</h3>
+          <span class="place">University of Piraeus</span>
+          <span class="date">Oct 2023 – Sep 2025</span>
+        </header>
+        <p class="card-note">
+          Coursework: Data Analysis with Statistical Packages (SPSS, R), Statistical Machine Learning (R, Python),
+          Data Mining (Python: ML, Clustering, Classification).
+        </p>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>BSc, Statistics & Insurance Science</h3>
+          <span class="place">University of Piraeus</span>
+          <span class="date">Sep 2018 – Jul 2023</span>
+        </header>
+        <p class="card-note">
+          Coursework: Statistics I &amp; II, Regression Models, Biostatistics, SQL, SPSS, R, Python.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Publications ===== -->
+  <section id="publications" class="section alt">
+    <div class="container">
+      <h2>Publications</h2>
+      <p>Coming soon — thesis and related research outputs will be linked here.</p>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Programming</h3>
+          <ul class="bullets">
+            <li>Python, R, SQL</li>
+            <li>SPSS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>ML & Analytics</h3>
+          <ul class="bullets">
+            <li>Modeling: LogReg, RF, SVM, GBM, MLP</li>
+            <li>Clustering, Classification, NLP</li>
+            <li>Fairness & Evaluation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <ul class="bullets">
+            <li>Power BI, MS Office</li>
+            <li>Azure & Microsoft Fabric</li>
+            <li>Docker, Git/GitHub</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="chips">
+        <span class="chip">AWS Cloud Practitioner (CLF-C02)</span>
+        <span class="chip">Azure AI-900</span>
+        <span class="chip">IT & Computer Handling (UoP)</span>
+        <span class="chip">Computer Knowledge (EOPPEP)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:xtzoras@gmail.com">xtzoras@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/CHRISTOSTZORAS" target="_blank" rel="noopener">github.com/CHRISTOSTZORAS</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/christos-tzoras" target="_blank" rel="noopener">linkedin.com/in/christos-tzoras</a></p>
+        </div>
+        <div>
+          <p><strong>Languages:</strong> Greek (Native), English (Fluent), Deutsch (Intermediate)</p>
+          <p><strong>Interests:</strong> Boxing, Football Data, Basketball Data</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Christos Tzoras. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Tiny helper script for current year + mobile nav -->
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-menu a').forEach(a => {
+      a.addEventListener('click', () => document.body.classList.remove('nav-open'));
+    });
+  </script>
+</body>
+</html>
