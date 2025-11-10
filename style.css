@@ -146,3 +146,53 @@ a:hover{text-decoration:underline}
 
 /* Footer */
 .site-footer{padding:28px 0;border-top:1px solid #1c2146;text-align:center;color:#a7b0e8}
+
+/* ===== Skill Badges Grid ===== */
+.skills-grid {
+  display: grid;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.skill-category h3 {
+  color: var(--brand-2);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  background: #1a1f3d;
+  color: #e7e9f4;
+  border-radius: 30px;
+  padding: 6px 14px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+  transition: all 0.25s ease;
+}
+
+.badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Color accents */
+.badge.blue { background: #1d3a7a; }
+.badge.red { background: #7a1d1d; }
+.badge.yellow { background: #7a671d; }
+.badge.green { background: #1d7a47; }
+.badge.orange { background: #7a3c1d; }
+.badge.purple { background: #4b1d7a; }
+.badge.cyan { background: #1d6f7a; }
+
+@media (max-width: 768px) {
+  .skills-grid { gap: 25px; }
+  .badge { font-size: 13px; padding: 5px 12px; }
+}
