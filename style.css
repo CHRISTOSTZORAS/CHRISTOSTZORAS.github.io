@@ -290,3 +290,27 @@ a:hover{text-decoration:underline}
 .cert-link:hover {
   text-decoration: underline;
 }
+
+/* ===== Experience Logos ===== */
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exp-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #0f1221;
+  padding: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 720px) {
+  .exp-logo {
+    width: 32px;
+    height: 32px;
+  }
+}

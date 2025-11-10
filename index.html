@@ -21,6 +21,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -52,45 +53,59 @@
     </div>
   </section>
 
-  <!-- ===== Experience ===== -->
-  <section id="experience" class="section alt">
-    <div class="container">
-      <h2>Professional Experience</h2>
+<!-- ===== Professional Experience ===== -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2>Professional Experience</h2>
 
+    <!-- PwC -->
     <article class="card">
-    <header class="card-head">
-        <h3>Associate Data Scientist — Analytics & AI Hub</h3>
+      <header class="card-head">
+        <div class="exp-header">
+          <img src="assets/pwc.png" alt="PwC Logo" class="exp-logo">
+          <h3>Associate Data Scientist — Analytics & AI Hub</h3>
+        </div>
         <span class="place">PwC, Athens</span>
         <span class="date">Apr 2024 – Present</span>
-    </header>
-    <ul class="card-list">
+      </header>
+      <ul class="card-list">
         <li>Developed and automated advanced <strong>Python data pipelines</strong> and scripts to streamline analytics processes and reduce manual workload across departments.</li>
         <li>Designed and deployed <strong>RESTful APIs</strong> to connect and query internal databases, enabling secure and efficient access to key business data.</li>
         <li>Built a <strong>Retrieval-Augmented Generation (RAG) system</strong> and AI chatbot that empowered clients to explore and analyze their organizational data using <strong>natural language queries</strong>.</li>
         <li>Performed <strong>end-to-end data analysis</strong> on large-scale sales datasets, uncovering patterns and insights that guided the sales department’s strategic decisions.</li>
         <li>Created <strong>PowerPoint AI Agents</strong> capable of scanning presentations, identifying visual and logical inconsistencies, and suggesting corrections to enhance clarity and consistency.</li>
-    </ul>
+      </ul>
     </article>
 
-      <article class="card">
-        <header class="card-head">
+    <!-- Military -->
+    <article class="card">
+      <header class="card-head">
+        <div class="exp-header">
+          <img src="assets/greek-army.png" alt="Greek Army Logo" class="exp-logo">
           <h3>Military Service — Military Police</h3>
-          <span class="place">Athens</span>
-          <span class="date">Nov 2022 – Nov 2023</span>
-        </header>
-        <p class="card-note">Fulfilled national service obligations; developed teamwork, discipline, and leadership skills.</p>
-      </article>
+        </div>
+        <span class="place">Athens</span>
+        <span class="date">Nov 2022 – Nov 2023</span>
+      </header>
+      <p>Fulfilled national service obligations; developed teamwork, discipline, and leadership skills.</p>
+    </article>
 
-      <article class="card">
-        <header class="card-head">
+    <!-- Battlenet -->
+    <article class="card">
+      <header class="card-head">
+        <div class="exp-header">
+          <img src="assets/battlenet.png" alt="Battlenet Logo" class="exp-logo">
           <h3>Internet Services</h3>
-          <span class="place">Battlenet Internet Café, Kallithea</span>
-          <span class="date">Aug 2019 – Jun 2021</span>
-        </header>
-        <p class="card-note">Customer and systems support in a fast-paced environment.</p>
-      </article>
-    </div>
-  </section>
+        </div>
+        <span class="place">Battlenet Internet Café, Kallithea</span>
+        <span class="date">Aug 2019 – Jun 2021</span>
+      </header>
+      <p>Customer and systems support in a fast-paced environment.</p>
+    </article>
+
+  </div>
+</section>
+
 
   <!-- ===== Projects ===== -->
   <section id="projects" class="section">
@@ -103,8 +118,10 @@
             <span class="date">Sep 2025</span>
           </header>
           <p>
-            Multi-agent system using Flowise with GPT-4o-mini and external web APIs to detect fake news.
-            Agents handle classification, credibility scoring, and source evaluation with explainable outputs.
+            A multi-agent AI system built using Flowise and GPT-4o-mini to detect and analyze fake news on social media.
+            Each agent performs classification, credibility scoring, and bias evaluation with explainable outputs.
+            The architecture integrates multiple web APIs to gather and verify external data sources in real time.
+            This research demonstrates the power of modular AI agents for misinformation detection and interpretability in NLP systems.
           </p>
           <div class="tags"><span class="tag">NLP</span><span class="tag">Flowise</span><span class="tag">GPT</span></div>
         </article>
@@ -115,8 +132,10 @@
             <span class="date">Mar 2025</span>
           </header>
           <p>
-            Comprehensive fake news detection using ML classifiers (LogReg, Random Forest), fairness auditing,
-            and explainable AI for bias evaluation.
+            A machine learning pipeline developed to classify fake versus legitimate news articles using Logistic Regression, Random Forest, and Fairlearn for bias evaluation.
+            The project emphasizes transparency by incorporating explainable-AI metrics and fairness auditing.
+            It automates data preprocessing, vectorization, model training, and evaluation using real-world datasets.
+            The resulting system achieved high precision in identifying misleading content while reducing model bias.
           </p>
           <div class="tags"><span class="tag">Python</span><span class="tag">Fairlearn</span><span class="tag">scikit-learn</span></div>
         </article>
@@ -127,8 +146,10 @@
             <span class="date">Jan 2025</span>
           </header>
           <p>
-            AI-powered automation framework for generating and summarizing PowerPoint presentations
-            using LLM agents and structured memory retrieval.
+            An AI-powered automation framework designed to analyze and enhance PowerPoint presentations using LLM agents.
+            The system identifies errors, inconsistent terminology, and missing structure while automatically summarizing content.
+            It integrates OpenAI chat models, embeddings and PPTX python library to handle document parsing, memory retrieval, and text generation.
+            This tool helps professionals produce accurate, coherent, and visually consistent presentations faster and smarter.
           </p>
           <div class="tags"><span class="tag">LangChain</span><span class="tag">Agents</span><span class="tag">Automation</span></div>
         </article>
@@ -139,8 +160,10 @@
             <span class="date">Dec 2024</span>
           </header>
           <p>
-            Intelligent AI research assistant leveraging embeddings to categorize, summarize,
-            and query large-scale storage data with semantic search.
+            An intelligent AI research assistant built to categorize, summarize, and query large-scale storage data.
+            It leverages embeddings and Retrieval-Augmented Generation (RAG) techniques for semantic search and data indexing.
+            The system supports multi-domain data exploration with explainable responses and contextual awareness.
+            Designed as part of internal innovation research, it streamlines knowledge retrieval and organizational data insight.
           </p>
           <div class="tags"><span class="tag">Embeddings</span><span class="tag">RAG</span><span class="tag">Data Indexing</span></div>
         </article>
