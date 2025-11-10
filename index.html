@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Christos Tzoras</title>
   <meta name="description" content="Portfolio of Christos Tzoras — Data Scientist, AI Engineer, and Machine Learning Engineer based in Athens, Greece." />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon-512.png" sizes="512x512">
+  <link rel="apple-touch-icon" href="assets/favicon-512.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -29,29 +35,42 @@
     </nav>
   </header>
 
-  <!-- ===== Hero ===== -->
-  <section id="top" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-media">
-        <img src="assets/christos.jpg" alt="Christos Tzoras" class="avatar">
-      </div>
-      <div class="hero-copy">
-        <h1>Christos Tzoras</h1>
-        <p class="subtitle">Data Scientist · AI Engineer · Machine Learning Engineer</p>
-        <p class="lead">
-          I’m a data scientist and AI engineer passionate about bridging statistics, artificial intelligence,
-          and innovation. My expertise lies in machine learning, NLP, and data-driven solutions — transforming
-          complex datasets into actionable intelligence. I focus on explainable, ethical, and efficient systems
-          that blend analytical depth with practical impact.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="christos-tzoras-cv.pdf" download>Download Résumé</a>
-          <a class="btn" href="https://github.com/CHRISTOSTZORAS" target="_blank">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/christos-tzoras" target="_blank">LinkedIn</a>
-        </div>
+<!-- ===== Hero ===== -->
+<section id="about" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-media">
+      <img src="assets/christos.jpg" alt="Christos Tzoras" class="avatar">
+    </div>
+
+    <div class="hero-copy">
+      <h1>Christos Tzoras</h1>
+      <p class="subtitle">Data Scientist · AI Engineer · Machine Learning Engineer</p>
+
+      <p class="lead">
+        As a <strong>Data Scientist and AI Engineer</strong> based in Athens, I specialize in leveraging 
+        statistical learning, natural language processing, and modern AI frameworks to build intelligent, 
+        explainable systems. My academic background in <strong>Applied Statistics</strong> has shaped a 
+        strong foundation in data analysis and model interpretability, while my professional work emphasizes 
+        automation, modular AI agents, and the ethical deployment of large language models.
+      </p>
+
+      <p class="lead">
+        I’m particularly interested in <strong>multi-agent architectures</strong>, 
+        <strong>retrieval-augmented generation (RAG)</strong>, and <strong>responsible AI</strong> 
+        applications for information systems and analytics. Beyond technical work, I enjoy exploring 
+        <strong>data visualization</strong> and <strong>storytelling</strong> as tools to translate complexity 
+        into clarity. My goal is to develop AI-driven products that are not only powerful and scalable, but also 
+        transparent, fair, and human-centered.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="christos-tzoras-cv.pdf" download>Download Résumé</a>
+        <a class="btn" href="https://github.com/CHRISTOSTZORAS" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/christos-tzoras" target="_blank">LinkedIn</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ===== Professional Experience ===== -->
 <section id="experience" class="section">
@@ -107,94 +126,127 @@
 </section>
 
 
-  <!-- ===== Projects ===== -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="grid-2">
-        <article class="card">
-          <header class="card-head">
-            <h3>Multi-Agent Fake News Detection (Thesis)</h3>
-            <span class="date">Sep 2025</span>
-          </header>
-          <p>
-            A multi-agent AI system built using Flowise and GPT-4o-mini to detect and analyze fake news on social media.
-            Each agent performs classification, credibility scoring, and bias evaluation with explainable outputs.
-            The architecture integrates multiple web APIs to gather and verify external data sources in real time.
-            This research demonstrates the power of modular AI agents for misinformation detection and interpretability in NLP systems.
-          </p>
-          <div class="tags"><span class="tag">NLP</span><span class="tag">Flowise</span><span class="tag">GPT</span></div>
-        </article>
+<!-- ===== Projects ===== -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
 
-        <article class="card">
-          <header class="card-head">
-            <h3>Fake News Detection using Machine Learning</h3>
-            <span class="date">Mar 2025</span>
-          </header>
-          <p>
-            A machine learning pipeline developed to classify fake versus legitimate news articles using Logistic Regression, Random Forest, and Fairlearn for bias evaluation.
-            The project emphasizes transparency by incorporating explainable-AI metrics and fairness auditing.
-            It automates data preprocessing, vectorization, model training, and evaluation using real-world datasets.
-            The resulting system achieved high precision in identifying misleading content while reducing model bias.
-          </p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Fairlearn</span><span class="tag">scikit-learn</span></div>
-        </article>
+    <div class="project-list">
 
-        <article class="card">
-          <header class="card-head">
-            <h3>PPT Agents</h3>
-            <span class="date">Jan 2025</span>
-          </header>
-          <p>
-            An AI-powered automation framework designed to analyze and enhance PowerPoint presentations using LLM agents.
-            The system identifies errors, inconsistent terminology, and missing structure while automatically summarizing content.
-            It integrates OpenAI chat models, embeddings and PPTX python library to handle document parsing, memory retrieval, and text generation.
-            This tool helps professionals produce accurate, coherent, and visually consistent presentations faster and smarter.
-          </p>
-          <div class="tags"><span class="tag">LangChain</span><span class="tag">Agents</span><span class="tag">Automation</span></div>
-        </article>
+      <article class="project-card">
+        <h3>
+          <a href="https://github.com/CHRISTOSTZORAS/Fake-News-Detection-Using-Agentic-AI" target="_blank">
+            Multi-Agent Fake News Detection (Thesis)
+          </a>
+        </h3>
+        <p>
+          Modular multi-agent NLP system built with <strong>Flowise</strong> and <strong>GPT-4o-mini</strong> for automated misinformation detection, 
+          bias scoring, and explainable classification. Integrated <strong>REST APIs</strong> for real-time external data verification.
+        </p>
+        <div class="project-tags">
+          <span>Serper API</span><span>Flowise</span><span>OpenAI</span><span>GoogleSearch API</span>
+        </div>
+      </article>
 
-        <article class="card">
-          <header class="card-head">
-            <h3>AI Storage Researcher</h3>
-            <span class="date">Dec 2024</span>
-          </header>
-          <p>
-            An intelligent AI research assistant built to categorize, summarize, and query large-scale storage data.
-            It leverages embeddings and Retrieval-Augmented Generation (RAG) techniques for semantic search and data indexing.
-            The system supports multi-domain data exploration with explainable responses and contextual awareness.
-            Designed as part of internal innovation research, it streamlines knowledge retrieval and organizational data insight.
-          </p>
-          <div class="tags"><span class="tag">Embeddings</span><span class="tag">RAG</span><span class="tag">Data Indexing</span></div>
-        </article>
-      </div>
+      <article class="project-card">
+        <h3>
+          <a href="https://github.com/CHRISTOSTZORAS/Data-Mining-In-Adult-Dataset" target="_blank">
+            Statistical Methods in Data Mining
+          </a>
+        </h3>
+        <p>
+          Comprehensive data mining project using the <strong>Adult Income Dataset (UCI)</strong> to predict income levels based on demographic and occupational attributes.
+          Implemented complete workflow — <strong>data preprocessing, feature selection, clustering, and classification</strong> — using Python statistical and ML libraries.
+        </p>
+        <p>
+          Applied <strong>K-Means</strong> and <strong>Agglomerative Clustering</strong> for unsupervised learning, followed by
+          <strong>Gradient Boosting</strong>, <strong>Random Forest</strong>, and <strong>Neural Network (Keras/TensorFlow)</strong> models for classification,
+          achieving up to <strong>86.18% accuracy</strong>. Conducted PCA for dimensionality reduction and outlier detection using Z-score.
+        </p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>scikit-learn</span>
+          <span>TensorFlow</span>
+          <span>Keras</span>
+          <span>Pandas</span>
+          <span>Data Mining</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>
+          <a href="https://github.com/CHRISTOSTZORAS/PPT-Agent-Checker" target="_blank">
+            PPT Agent Checker
+          </a>
+        </h3>
+        <p>
+          AI automation tool leveraging <strong>Python</strong> and <strong>LLM agents</strong> to analyze and refactor PowerPoint decks. 
+          Automatically detects semantic and visual inconsistencies using <strong>embeddings</strong> and <strong>PPTX parsing</strong>.
+        </p>
+        <div class="project-tags">
+          <span>PPTX</span><span>LLMs</span><span>Automation</span><span>Python</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>
+          <a href="https://github.com/CHRISTOSTZORAS/AI_ChatBot" target="_blank">
+            AI Storage Researcher
+          </a>
+        </h3>
+        <p>
+          Intelligent retrieval system combining <strong>RAG</strong>, <strong>embeddings</strong>, and <strong>vector search</strong> 
+          to support explainable document summarization and multi-domain knowledge exploration.
+        </p>
+        <div class="project-tags">
+          <span>OpenAI</span><span>Embeddings</span><span>RAG</span><span>React</span>
+        </div>
+      </article>
+
     </div>
-  </section>
 
-  <!-- ===== Education ===== -->
-  <section id="education" class="section alt">
-    <div class="container">
-      <h2>Education</h2>
+    <p class="more-projects-note">
+      For more of my work and ongoing projects, please visit my 
+      <a href="https://github.com/CHRISTOSTZORAS" target="_blank"><strong>GitHub profile</strong></a>.
+    </p>
 
-      <article class="card">
-        <header class="card-head">
+  </div>
+</section>
+
+
+
+<!-- ===== Education ===== -->
+<section id="education" class="section alt">
+  <div class="container">
+    <h2>Education</h2>
+
+    <article class="card">
+      <header class="card-head">
+        <div class="edu-header">
+          <img src="assets/unipi.png" alt="University of Piraeus Logo" class="edu-logo">
           <h3>MSc, Applied Statistics (Data Analysis & Biostatistics)</h3>
-          <span class="place">University of Piraeus</span>
-          <span class="date">Oct 2023 – Sep 2025</span>
-        </header>
-        <p>Specialization in data analysis, statistical ML, and data mining with Python and R.</p>
-      </article>
+        </div>
+        <span class="place">University of Piraeus</span>
+        <span class="date">Oct 2023 – Sep 2025</span>
+      </header>
+      <p>Specialization in data analysis, statistical ML, and data mining with Python and R.</p>
+    </article>
 
-      <article class="card">
-        <header class="card-head">
+    <article class="card">
+      <header class="card-head">
+        <div class="edu-header">
+          <img src="assets/unipi.png" alt="University of Piraeus Logo" class="edu-logo">
           <h3>BSc, Statistics & Insurance Science</h3>
-          <span class="place">University of Piraeus</span>
-          <span class="date">Sep 2018 – Jul 2023</span>
-        </header>
-        <p>Statistical and programming coursework in SPSS, R, Python, and SQL.</p>
-      </article>
-    </div>
-  </section>
+        </div>
+        <span class="place">University of Piraeus</span>
+        <span class="date">Sep 2018 – Jul 2023</span>
+      </header>
+      <p>Statistical and programming coursework in SPSS, R, Python, and SQL.</p>
+    </article>
+
+  </div>
+</section>
+
 
 <!-- ===== Publications ===== -->
 <section id="publications" class="section">
@@ -241,7 +293,7 @@
         <h3>Azure AI Fundamentals (AI-900)</h3>
         <p class="issuer">Microsoft</p>
         <p class="date">Issue Date: April, 2024</p>
-        <a href="YOUR_AI900_LINK" class="cert-link" target="_blank">View Certificate</a>
+        <a href="https://learn.microsoft.com/en-us/users/christostzorasgr-2936/credentials/df7a396a2a7c5883" class="cert-link" target="_blank">View Certificate</a>
       </div>
 
     </div>
