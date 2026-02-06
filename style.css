@@ -142,7 +142,11 @@ a:hover{text-decoration:underline}
   flex: 1;
   min-width: 250px;
 }
-
+.cert-card .date{
+  margin-left: 0;     /* ακυρώνει το auto */
+  width: 100%;
+  text-align: center;
+}
 .edu-logo {
   width: 36px;
   height: 36px;
